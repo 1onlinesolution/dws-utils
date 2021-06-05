@@ -1,0 +1,54 @@
+{
+  "name": "@1onlinesolution/dws-utils",
+  "version": "0.0.1",
+  "description": "Simple utilities for the @1onlinesolution/dws-xxx packages",
+  "main": "index.js",
+  "scripts": {
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "lint": "eslint *.js lib/**/*.js",
+    "test": "NODE_ENV=test mocha",
+    "coverage": "nyc --reporter=lcov --reporter=text --report-dir=./coverage --temp-dir=/Users/ioannis/tmp/.nyc_output npm run test",
+    "coverage-clean": "rm -rf ./coverage & rm -rf ./.nyc_output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1onlinesolution/dws-utils.git"
+  },
+  "author": "1onlinesolution",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/1onlinesolution/dws-utils/issues"
+  },
+  "homepage": "https://github.com/1onlinesolution/dws-utils#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-plugin-security": "^1.4.0",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.3.1"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "mocha": {
+    "watch-files": [
+      "test/**/*.spec.js"
+    ],
+    "watch-ignore": [
+      "node_modules"
+    ],
+    "extension": [
+      "js"
+    ],
+    "slow": "2000=",
+    "timeout": "20000",
+    "reporter": "spec",
+    "recursive": "true",
+    "exit": "true"
+  }
+}
