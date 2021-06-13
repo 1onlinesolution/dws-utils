@@ -1,7 +1,7 @@
 {
   "name": "@1onlinesolution/dws-utils",
-  "version": "0.0.2",
-  "description": "Simple utilities for the @1onlinesolution/dws-xxx packages",
+  "version": "0.1.0",
+  "description": "Simple utilities",
   "main": "index.js",
   "scripts": {
     "patch": "npm version patch",
@@ -33,6 +33,7 @@
     "prettier": "^2.3.1"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "moment": "^2.29.1"
   },
   "mocha": {
