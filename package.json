@@ -1,6 +1,6 @@
 {
   "name": "@1onlinesolution/dws-utils",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Simple utilities",
   "main": "index.js",
   "scripts": {
